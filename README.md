@@ -1,27 +1,7 @@
-# NextGen Gadgets — Netlify + Decap CMS
+# NextGen Gadgets
 
-This is a static affiliate-site starter prepared for the `nggadgethub/nextgen-gadgets` GitHub repository.
+This package contains a single-file product-manager landing page.
 
-## Main pages
-- `index.html`
-- `products.html`
-- `product-details.html?id=wireless-earbuds`
-- `categories.html`
-- `comparison.html`
-- `affiliate-disclosure.html`
-- `privacy.html`
-- `terms.html`
+Important: Decap CMS cannot be made fully functional with only one HTML file. It requires a CMS config file and an authentication method for GitHub.
 
-## Product manager
-Open `/admin/` on the deployed site.
-
-The Decap CMS dashboard edits `products.json` and uploads product images to `images/products/`.
-
-## Important setup
-This package uses the Decap CMS GitHub backend. Netlify must be configured to allow GitHub authentication for the CMS. The repository is expected to be:
-`nggadgethub/nextgen-gadgets`
-
-If your Netlify production URL is different, update `site_url` and `display_url` in `admin/config.yml`.
-
-## Before publishing
-Replace sample product information, verify MRP/current prices/specifications, add your actual affiliate URLs, and replace the starter legal text with policies appropriate to your site.
+The main website can still be deployed normally.
