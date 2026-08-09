@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: nggadgethub/nextgen-gadgets
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://smartgadgetslab.netlify.app"
+display_url: "https://smartgadgetslab.netlify.app"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Product Name"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Price"
+        name: "price"
+        widget: "string"
+
+      - label: "Product Image"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Product Link"
+        name: "link"
+        widget: "string"
+
+      - label: "Category"
+        name: "category"
+        widget: "string"
